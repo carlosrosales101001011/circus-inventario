@@ -2,6 +2,8 @@ import { PTApi } from '../api';
 import { useState } from 'react';
 
 const TC_DEFAULT = { precio_venta: 3.35 };
+// CHECK ID 4 (INSUMOS) no se muestra en esta vista
+const ID_CHECK_INSUMOS = 4;
 
 // Vista publica (sin login): guarda los articulos en estado local, no en redux
 export const useViewInventario = () => {
@@ -35,7 +37,7 @@ export const useViewInventario = () => {
 					etiquetas_str: etiquetas_busquedas.map((e) => `${e.label}`).join(', '),
 				};
 			});
-			setArticulos(data_articulos);
+			setArticulos(data_articulos.filter((m) => m.id_color_subrayado !== ID_CHECK_INSUMOS));
 		} catch (error) {
 			console.log(error);
 			setError(error.message);

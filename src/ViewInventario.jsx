@@ -20,7 +20,6 @@ const CHECKS = [
 	{ id: 1, label: 'RAL', color: '#2c10cd', textWhite: true },
 	{ id: 2, label: 'CIRCUS', color: '#EEBE00' },
 	{ id: 3, label: 'REDUCTO', color: '#17a700' },
-	{ id: 4, label: 'INSUMOS', color: '#C8A2C8' },
 ];
 
 const costoTotalSoles = (item) => item.costo_unitario_soles * item.cantidad + item.mano_obra_soles;
@@ -55,7 +54,7 @@ export const ViewInventario = () => {
 	const [filters] = useState(initFilters);
 	// fila inicial de la paginacion por pestaña, para no volver a la pagina 1 al actualizar datos
 	const [firstxTab, setFirstxTab] = useState({});
-	// filtro de la tabla por CHECK ID (1 RAL, 2 CIRCUS, 3 REDUCTO, 4 INSUMOS); null = sin filtro
+	// filtro de la tabla por CHECK ID (1 RAL, 2 CIRCUS, 3 REDUCTO); null = sin filtro
 	const [filtroCheckId, setfiltroCheckId] = useState(null);
 
 	useEffect(() => {
