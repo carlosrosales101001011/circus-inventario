@@ -1,0 +1,45 @@
+/* Estilos copiados de personaltrainingfront (_myStyles.scss y utilidades del tema) */
+.font-24 {
+	font-size: 24px;
+}
+.text-color-dolar {
+	color: #1e8727 !important;
+}
+.text-gray {
+	color: #999;
+}
+
+.dataTable-verticals-lines td {
+	border-right: 1px solid #d9d9d9;
+}
+.dataTable-verticals-lines th:last-child,
+.dataTable-verticals-lines td:last-child {
+	border-right: none;
+}
+
+.dataTable-inventario table td {
+	vertical-align: top !important;
+}
+.dataTable-inventario table tr.row-color-subrayado-1 > td {
+	background-color: #2c10cd !important; /* azul RAL */
+	color: #fff !important;
+}
+.dataTable-inventario table tr.row-color-subrayado-1 > td .text-color-dolar,
+.dataTable-inventario table tr.row-color-subrayado-1 > td .text-gray {
+	color: #fff !important;
+}
+.dataTable-inventario table tr.row-color-subrayado-2 > td {
+	background-color: #eebe00 !important; /* amarillo Circus */
+}
+.dataTable-inventario table tr.row-color-subrayado-3 > td {
+	background-color: #17a700 !important; /* verde Reducto */
+}
+.dataTable-inventario table tr.row-color-subrayado-3 > td .text-color-dolar {
+	color: #000 !important;
+}
+.dataTable-inventario table tr.row-color-subrayado-4 > td {
+	background-color: #c8a2c8 !important; /* lila Insumos */
+}
+.dataTable-inventario table tr.row-color-subrayado-4 > td .text-color-dolar {
+	color: #000 !important;
+}
